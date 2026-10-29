@@ -62,6 +62,20 @@ button.sm.on{background-image:var(--bgalt)}
 #htabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:4px 0 8px}#htabs button{width:auto;display:inline-block;margin:0}
 .hr{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:24px;text-align:left}.hr .n{width:34px}.hr .nme{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hr img{width:34px;height:34px;border:3px solid var(--ink);border-radius:255px 15px 225px 15px/15px 225px 15px 255px;background:#efe6d0}
 .row input{text-transform:none;width:140px;font-size:24px;margin:0}#hg input{text-transform:none;font-size:22px}
+#ov{padding:max(12px,env(safe-area-inset-top)) 8px max(12px,env(safe-area-inset-bottom))}
+@media(max-width:520px){
+.card{padding:26px 10px 16px 40px;background:var(--bgcard) 0 0/100% 100% no-repeat,linear-gradient(90deg,transparent 28px,#e57373 28px,#e57373 30px,transparent 30px),repeating-linear-gradient(180deg,transparent 0 28px,#a9cdee 28px 30px),var(--card);box-shadow:3px 4px 0 rgba(43,42,51,.3)}
+.card::before,.card::after{width:60px;height:20px;top:-10px}
+h1{font-size:40px}h2{font-size:34px}.lb{font-size:17px;margin-top:2px}#msg{font-size:17px;margin:2px 0 6px}
+button{font-size:22px;min-height:44px;padding:4px 18px 10px}button.sm{font-size:17px;min-height:38px;padding:2px 12px 8px}
+#cnt{gap:6px}#cnt button{min-width:44px}
+.row{display:grid;grid-template-columns:auto 1fr;gap:6px;align-items:center;margin:8px 0}.row input{width:100%;min-width:0;font-size:22px}
+.row .pick{grid-column:1/-1;display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin:0}.row .pick img{width:100%;height:auto;aspect-ratio:1;border-width:2px}
+.card #b1{position:sticky;bottom:6px;z-index:2}
+.peerrow,.hr{font-size:20px}.nmt{font-size:22px}.lth{width:38px;height:38px}.rk svg{width:36px;height:36px}
+}
+@media(max-width:340px){.row .pick{grid-template-columns:repeat(4,1fr)}h1{font-size:34px}}
+@media(max-height:520px){#ov{padding:8px}.card{padding:18px 12px 12px 44px}h1{font-size:32px;margin:0}.und,#msg{display:none}button{min-height:38px;font-size:20px;padding:2px 14px 8px}.row{margin:4px 0}.card #b1{bottom:2px}}
 #stats{font-size:17px;opacity:.85;margin-top:8px}
 </style></head><body>
 <canvas id="c"></canvas>
